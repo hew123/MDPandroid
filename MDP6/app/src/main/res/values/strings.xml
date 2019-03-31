@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MDP6</string>
+
+    <string name="bluetooth_scan">Scan for Nearby Devices</string>
+    <string name="bluetooth_discovering">Discovering Nearby Devices</string>
+    <string name="bluetooth_paired_device_list_title">Paired Devices</string>
+    <string name="bluetooth_discovered_device_list_title">Discovered Devices</string>
+    <string name="bluetooth_disconnect">Disconnect</string>
+    <string name="bluetooth_send_message">Send</string>
+    <string name="bluetooth_messages_title">Messages</string>
+    <string name="bluetooth_unconnected_error">Please connect to a remote Bluetooth device first</string>
+    <string name="config1_defaultValue">TRY1</string>>
+    <string name="config2_defaultValue">TRY2</string>>
+    <string name="config1_key">KEY1</string>
+    <string name="config2_key">KEY2</string>
+    <string name="saved_robot_position">robot_position</string>
+    <string name="saved_map1">map1</string>
+    <string name="saved_map2">map2</string>
+    <string name="saved_waypoint">waypoint</string>
+    <string name="saved_arrow_cell1">arrowcell1</string>
+    <string name="saved_arrow_cell2">arrowcell2</string>
+    <string name="saved_arrow_cell3">arrowcell3</string>
+    <string name="saved_arrow_cell4">arrowcell4</string>
+    <string name="saved_arrow_cell5">arrowcell5</string>
+    <string name="saved_status">saved_status</string>
+
+</resources>

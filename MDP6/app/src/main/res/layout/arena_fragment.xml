@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/arena_frame"
+        android:layout_width="465dp"
+        android:layout_height="620dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/Yaxis1"
+        android:layout_width="32dp"
+        android:layout_height="640dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:text="19 18 17 16 15 14 13"
+        android:textSize="18.2sp" />
+
+    <TextView
+        android:id="@+id/Yaxis2"
+        android:layout_width="32dp"
+        android:layout_height="640dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="240dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:text="12 11 10  9  8  7"
+        android:textSize="18.2sp" />
+
+    <TextView
+        android:id="@+id/Yaxis3"
+        android:layout_width="32dp"
+        android:layout_height="640dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="425dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:text="6  5  4  3  2  1  0"
+        android:textSize="18.2sp" />
+
+    <TextView
+        android:id="@+id/Xaxis1"
+        android:layout_width="155dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="640dp"
+        android:gravity="center_horizontal"
+        android:text="  0    1    2    3    4  "
+        android:textSize="17.5sp" />
+
+    <TextView
+        android:id="@+id/Xaxis2"
+        android:layout_width="155dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="640dp"
+        android:gravity="center_horizontal"
+        android:text="5    6    7   8   9"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/Xaxis3"
+        android:layout_width="155dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="640dp"
+        android:gravity="center_horizontal"
+        android:text="10  11  12  13  14"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/forward_button"
+        android:layout_width="74dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="9dp"
+        android:layout_toEndOf="@+id/rotate_left_button"
+        android:layout_toRightOf="@+id/rotate_left_button"
+        app:srcCompat="@drawable/ic_arrow_upward_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/rotate_right_button"
+        android:layout_width="70dp"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginBottom="11dp"
+        android:layout_toEndOf="@+id/forward_button"
+        android:layout_toRightOf="@+id/forward_button"
+        app:srcCompat="@drawable/ic_rotate_right_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/rotate_left_button"
+        android:layout_width="74dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_rotate_left_black_24dp" />
+
+    <Button
+        android:id="@+id/explore_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map_refresh_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="0dp"
+        android:text="explore"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/fastest_path_button"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/explore_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="0dp"
+        android:text="fastest path" />
+
+    <Button
+        android:id="@+id/save_map_button"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/load_map_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="0dp"
+        android:text="save map"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/load_map_button"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="0dp"
+        android:text="load map" />
+
+    <Button
+        android:id="@+id/map_refresh_button"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save_map_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="0dp"
+        android:text="map refresh"
+        android:enabled="false"/>
+
+    <Switch
+        android:id="@+id/auto_switch"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="14dp"
+        android:text="Auto"
+        android:checked="true"/>
+
+    <Switch
+        android:id="@+id/tilt_switch"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_alignBottom="@+id/auto_switch"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginBottom="35dp"
+        android:checked="false"
+        android:text="Tilt" />
+
+    <Button
+        android:id="@+id/place_waypoint_button"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fastest_path_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="0dp"
+        android:text="place waypoint"
+        android:enabled="true"/>
+
+    <Button
+        android:id="@+id/place_startpoint_button"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_waypoint_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="0dp"
+        android:text="place startpoint"
+        android:enabled="true"/>
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_startpoint_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="0dp"
+        android:text="stop"
+        android:enabled="true"/>
+
+    <Button
+        android:id="@+id/calibrate_front_button"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stop_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="0dp"
+        android:text="Calib Front"
+        android:enabled="true"/>
+
+    <Button
+        android:id="@+id/calibrate_right_button"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calibrate_front_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="0dp"
+        android:text="Calib Right"
+        android:enabled="true"/>
+
+    <Button
+        android:id="@+id/mapdescriptor_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/forward_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="171dp"
+        android:layout_marginLeft="171dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="5dp"
+        android:enabled="true"
+        android:text="Mapdescriptor" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="19dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/robot_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="89dp"
+        android:text="status"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_dialog_title"
+        android:layout_marginLeft="@dimen/margin_dialog_title"
+        android:layout_marginStart="@dimen/margin_dialog_title"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/primary_text_light"
+        android:text="Map Descriptor"/>
+
+    <TextView
+        android:id="@+id/map1_descriptor_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_dialog_contents"
+        android:layout_marginRight="@dimen/margin_dialog_contents"
+        android:textColor="@android:color/black"
+        android:text="MAP1" />
+
+    <TextView
+        android:id="@+id/map1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_dialog_contents"
+        android:layout_marginRight="@dimen/margin_dialog_contents" />
+
+    <TextView
+        android:id="@+id/map2_descriptor_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_dialog_contents"
+        android:layout_marginRight="@dimen/margin_dialog_contents"
+        android:textColor="@android:color/black"
+        android:text="MAP2" />
+
+    <TextView
+        android:id="@+id/map2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_dialog_contents"
+        android:layout_marginRight="@dimen/margin_dialog_contents" />
+
+    <TextView
+        android:id="@+id/arrow_image_cell_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_dialog_contents"
+        android:layout_marginRight="@dimen/margin_dialog_contents"
+        android:textColor="@android:color/black"
+        android:text="Arrow Image Coordinates" />
+
+    <TextView
+        android:id="@+id/cell1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_dialog_contents"
+        android:layout_marginRight="@dimen/margin_dialog_contents"
+        android:text="NONE"/>
+
+    <TextView
+        android:id="@+id/cell2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_dialog_contents"
+        android:layout_marginRight="@dimen/margin_dialog_contents"
+        android:text="NONE"/>
+
+    <TextView
+        android:id="@+id/cell3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_dialog_contents"
+        android:layout_marginRight="@dimen/margin_dialog_contents"
+        android:text="NONE"/>
+
+    <TextView
+        android:id="@+id/cell4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_dialog_contents"
+        android:layout_marginRight="@dimen/margin_dialog_contents"
+        android:text="NONE"/>
+
+    <TextView
+        android:id="@+id/cell5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_dialog_contents"
+        android:layout_marginRight="@dimen/margin_dialog_contents"
+        android:text="NONE"/>
+
+
+</LinearLayout>

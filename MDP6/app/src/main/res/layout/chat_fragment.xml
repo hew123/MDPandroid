@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/bluetooth_disconnect_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth_disconnect"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/bluetooth_connected_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/bluetooth_send_message_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/bluetooth_message"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+            <Button
+                android:id="@+id/send_bluetooth_message_button"
+                android:text="@string/bluetooth_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bluetooth_messages_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bluetooth_messages_title"
+                android:layout_marginVertical="@dimen/margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title"
+                android:text="@string/bluetooth_messages_title"/>
+
+            <ListView
+                android:id="@+id/bluetooth_messages"
+                android:transcriptMode="alwaysScroll"
+                android:stackFromBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
