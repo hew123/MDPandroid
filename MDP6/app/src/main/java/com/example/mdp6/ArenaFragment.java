@@ -153,6 +153,7 @@ public class ArenaFragment extends Fragment implements SensorEventListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.arena_fragment, container, false);
 
@@ -630,9 +631,7 @@ public class ArenaFragment extends Fragment implements SensorEventListener {
                         Toast.makeText(getContext(),"Please select a starting point",Toast.LENGTH_SHORT).show();
                     }else {
 
-                        //arenaView.sendRobotStartingPosition();
                         //al_fastest:10,10,N
-                        //bluetooth.sendMessageToRemoteDevice(ROBOT_COMMAND_BEGIN_FASTEST);
                         bluetooth.sendMessageToRemoteDevice(ROBOT_COMMAND_ALGO_PREFIX + ROBOT_COMMAND_BEGIN_FASTEST + ":" + arenaView.getRobotStartingPosition());
                         bluetooth.sendMessageToRemoteDevice(ROBOT_COMMAND_ARDUI_PREFIX + "F");
                         status = Status.FASTEST;
