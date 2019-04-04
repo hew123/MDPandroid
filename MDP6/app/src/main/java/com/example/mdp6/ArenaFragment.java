@@ -311,8 +311,6 @@ public class ArenaFragment extends Fragment implements SensorEventListener {
                 args1.putString("map1", Preferences.readPreference(getContext(), R.string.saved_map1));
                 args1.putString("map2", Preferences.readPreference(getContext(), R.string.saved_map2));
 
-                //Cell[] arrowCellArray = arenaView.getArrowCell();
-
                 for(int i=0; i<5; i++){
                     if(arrowCellString[i] != null){
 
@@ -592,19 +590,41 @@ public class ArenaFragment extends Fragment implements SensorEventListener {
                 } else {
                     if (bluetooth.getState() == BluetoothService.State.CONNECTED) {
 
-                        // al_explore:10,10,N|3,3
-                        bluetooth.sendMessageToRemoteDevice(ROBOT_COMMAND_ALGO_PREFIX + ROBOT_COMMAND_BEGIN_EXPLORATION + ":" + arenaView.getRobotStartingPosition() + "|" + waypointMsg);
-                        // ar_Ew
-                        bluetooth.sendMessageToRemoteDevice(ROBOT_COMMAND_ARDUI_PREFIX + "E" + arenaView.getRobotDir());
-
                         status = Status.EXPLORING;
                         robotStatusView.setText("EXPLORING");
                         Preferences.savePreference(getContext(),R.string.saved_status,"EXPLORING");
                         Toast.makeText(getContext(),"Robot exploring",Toast.LENGTH_SHORT).show();
 
                         for(int i=0; i<5; i++){
+                            if(arrowCellString[i] != null){
+                                switch (i) {
+                                    case 0:
+                                        getArguments().putString("saved_arrow_cell1", null);
+                                        break;
+                                    case 1:
+                                        getArguments().putString("saved_arrow_cell2", null);
+                                        break;
+                                    case 2:
+                                        getArguments().putString("saved_arrow_cell3", null);
+                                        break;
+                                    case 3:
+                                        getArguments().putString("saved_arrow_cell4", null);
+                                        break;
+                                    case 4:
+                                        getArguments().putString("saved_arrow_cell5", null);
+                                        break;
+                                }
+                            }
+                        }
+
+                        for(int i=0; i<5; i++){
                             arrowCellString[i] = null;
                         }
+
+                        // al_explore:10,10,N|3,3
+                        bluetooth.sendMessageToRemoteDevice(ROBOT_COMMAND_ALGO_PREFIX + ROBOT_COMMAND_BEGIN_EXPLORATION + ":" + arenaView.getRobotStartingPosition() + "|" + waypointMsg);
+                        // ar_Ew
+                        bluetooth.sendMessageToRemoteDevice(ROBOT_COMMAND_ARDUI_PREFIX + "E" + arenaView.getRobotDir());
 
                     } else {
                         Toast.makeText(getContext(), "Bluetooth is not connected", Toast.LENGTH_SHORT).show();
