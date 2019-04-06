@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MDP7</string>
+    <string name="config1_default">default1</string>>
+    <string name="config2_default">default2</string>>
+    <string name="config1_key">KEY1</string>
+    <string name="config2_key">KEY2</string>
+    <string name="saved_map1">map1</string>
+    <string name="saved_map2">map2</string>
+    <string name="saved_arrow_cell1">arrowcell1</string>
+    <string name="saved_arrow_cell2">arrowcell2</string>
+    <string name="saved_arrow_cell3">arrowcell3</string>
+    <string name="saved_arrow_cell4">arrowcell4</string>
+    <string name="saved_arrow_cell5">arrowcell5</string>
+    <string name="saved_status">saved_status</string>
+</resources>
